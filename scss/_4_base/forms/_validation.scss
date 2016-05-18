@@ -10,3 +10,12 @@ input.error {
   margin-top: $input-label-v-spacing; // spacing between the input and it's error message
   color: $brand-warning;
 }
+
+fieldset {
+  @include transition(padding $transition-timing);
+  &.error {
+    @include transition(padding $transition-timing);
+    border: 1px solid $brand-warning;
+    padding: $layout-gutter-width / 2;
+  }
+}
