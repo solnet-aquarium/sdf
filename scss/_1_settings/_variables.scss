@@ -1,0 +1,150 @@
+
+
+//NOTE: These variables are referenced by Bootstrap. So any variables defined here will overwrite the BS ones!!!!!!!!!!!!
+
+$brand-primary-70:          #421949;
+$brand-primary:             #214385;
+$brand-primary-40:          #c0acc3;
+$brand-primary-30:          #a082a4;
+$brand-primary-10:          #efeaf0;
+$brand-primary-20:          #e7e0e8; //Alerts background
+
+$brand-secondary:           #005470;
+$brand-secondary-40:        #33758c;
+$brand-secondary-30:        #6698a9;
+$brand-secondary-10:        #edf3f5;
+
+$brand-teritary:            #e34397;
+$brand-teritary-30:         #f7c7e0;
+$brand-neutral:             #3f3f42;
+
+$brand-success:             $brand-secondary-30;
+$brand-info:                $brand-primary-20;
+$brand-warning:             #ff0000;
+$brand-danger:              $brand-warning;
+
+$gray-90:                   $brand-neutral;
+$gray-80:                   #414042;
+$gray-70:                   #8d8c8e;  
+$gray:                      #b3b3b3;
+$gray-40:                   #b3b3b3;  
+$gray-30:                   #c6c6c6; 
+$gray-20:                   #d9d9d9; 
+$gray-10:                   #ececec;
+
+
+// Headings
+
+$font-size-h1     : 36;            
+$font-size-h2     : 28;            
+$font-size-h3     : 22;            
+$font-size-h4     : 20;            
+$font-size-h5     : 18;            
+$font-size-h6     : 14; 
+
+$font-colour-h1     : $brand-secondary;            
+$font-colour-h2     : $brand-primary;            
+$font-colour-h3     : $brand-secondary;           
+$font-colour-h4     : $brand-primary;            
+$font-colour-h5     : $brand-neutral;            
+$font-colour-h6     : $font-colour-h5; 
+
+$font-weight-h1     : 300;            
+$font-weight-h2     : 500;            
+$font-weight-h3     : 500;            
+$font-weight-h4     : 500;            
+$font-weight-h5     : 500;            
+$font-weight-h6     : 700;            
+
+
+$body-copy-size         : 14;
+$body-copy-weight       : 300;
+$body-copy-line-height  : 1.9rem;
+$link-underline-offset  : 0.1rem; // position the link underline. This is influenced by the line height
+$body-copy              : $gray-80;
+
+
+
+// base Media breaks
+
+$screen-xxs                 : 360px;
+$screen-xs                  : 480px;
+$screen-sm                  : 590px;
+$screen-md                  : 768px;
+$screen-lg                  : 992px;
+$screen-xl                  : 1200px;
+
+
+//Grid settings
+
+$layout-gutter-width: 40px;
+
+
+
+// Define values for margins
+
+$margin-xs        : $layout-gutter-width/3;
+$margin-sm        : $layout-gutter-width/2; 
+$margin-md        : $layout-gutter-width; // match the layout
+$margin-lg        : $layout-gutter-width*1.5;
+$margin-xl        : $layout-gutter-width*2;
+
+
+
+// Forms
+
+//input background
+$input-bg               : $gray-10;
+$input-border           : $brand-primary;
+// checkbox width which is also used for the height so it renders square. Also used for radio button sizing
+$checkbox-width         : 32px;
+// the vertical spacing between each radio or checkbox input and label group
+$checkbox-v-spacing     : 20px;
+// base input width. 100% allows it to resize to it's container on small screens
+$input-width            : 100%;
+// Set a max input length for large screens, so the input doesn't render with a width of 1100px
+$input-max-length       : 500px;
+// Height of your input
+$input-height           : 42px;
+$input-left-pad         : $margin-xs;
+$input-focus            : $brand-primary-70;
+// vertical spacing between field groups
+$field-group-v-spacing  : $layout-gutter-width * 1.5;
+// vertical spacing between a text input and it's label
+$input-label-v-spacing  : $layout-gutter-width / 3;
+$placeholder            : $gray-70;
+
+
+
+
+// Tables
+
+$color-table-head       : $brand-primary; 
+$color-table-head-text  :  #fff;
+$color-table-footer     : $gray-70; 
+$color-table-footer-text:  #fff;
+$color-table-cell-bg    : $gray-10;
+
+
+
+// transition settings and icons
+
+$transition-timing       : 0.5s; 
+$transition-timing-fast  : 0.25s;
+$transition-timing-slow  : 1.5s;
+$transition-ease         : ease-in-out;
+
+
+
+
+// Buttons
+
+$btn-default-width          : 300px;
+$btn-sm-width               : 120px;
+$btn-md-width               : 200px;
+$btn-lg-width               : $btn-default-width;
+
+
+// SVG sprite
+
+$svg-sprite-width           : 500;  // leave off units like px

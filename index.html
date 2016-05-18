@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main-styles.css">
+        <link rel="stylesheet" href="css/prism.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/prism.js"></script>
+
+    </head>
+    <body>
+        <header class="tk-header">
+            <div class="container">
+                <h1>Interface toolkit</h1>
+
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Reserved words</h2>
+                    <p>These are reserved for use as modifier classes and not to have any default declarations assigned</p>
+                    <ul>
+                        <li>.open</li>
+                        <li>.active</li>
+                        <li>.visible</li>
+                        <li>.error</li>
+                    </ul>
+                    <p>The reason for not assigning declarations to the .open class, we don't know how you will 'open' the component. It could be via display, or max-height or height. The above way allows you to customise it per component.</p>
+                    <p>These reserved words will be toggled by JS to change the state of a component.</p>
+                    <h2>Notes</h2>
+                    <h3>Aria-required</h3>
+                    <p>Imagine going through 40 questions with &ldquo;field required&rdquo; going off in your ears every minute?</p>
+                    <p>It is proposed that with proper digital service design, the optional fields will be limited in number. With this in mind, we can inform the user at the start of the service that all fields are mandatory unless otherwise stated. This removes the excessive noise for screen readers.</p>
+                    <p>All optional fields will be noted with (optional) at the end of the label.</p>
+
+                </div>
+            </div>
+            <!-- Below are the imported components, so we can work on them individually  -->
+
+            <!-- ~~~~~~~~~~~~~ Input field ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <h2>Input field</h2>
+            <h3>Labels</h3>
+            <uL>
+                <li>all form fields should be given labels</li>
+                <li>don't hide labels, unless the surrounding context makes them unnecessary</li>
+                <li>labels should be aligned above their fields</li>
+                <li>label text should be short, direct and in sentence case</li>
+                <li>avoid colons at the end of labels</li>
+                <li>labels should be associated with form fields using the for attribute</li>
+            </uL>
+            <div id="component-01-input-field" data-component="comp-01-input-field.html"></div>
+
+            <pre>
+                <code id="comp-01-input-field-code" class="language-markup">
+
+                </code>
+            </pre>
+
+
+            <h3>Further reading</h3>
+            <p><a href="http://mobileinputtypes.com/" rel="external">Input types and corresponding keyboards</a></p>
+
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~ Radio buttons ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <h2>Radio buttons</h2>
+
+            <div id="component-02-radio-group" data-component="comp-02-radio-group.html"></div>
+            
+            <pre>
+                <code id="comp-02-radio-group-code" class="language-markup">
+
+                </code>
+            </pre>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~ Check boxes ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <h2>Checkboxes</h2>
+
+            <div id="component-03-checkbox-group" data-component="comp-03-checkbox-group.html"></div>
+            
+            <pre>
+                <code id="comp-03-checkbox-group-code" class="language-markup">
+
+                </code>
+            </pre>
+
+
+            <pre>
+                <code id="comp-03-checkbox-group-code2" class="language-markup">
+
+                </code>
+            </pre>
+
+
+
+
+        </div>
+
+
+
+
+
+        <footer>
+        </footer>
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+
+
+<form id="comp-03-checkbox-group">
+
+    <span data-code-snippet>
+        <fieldset class="field-group">
+            <legend>Are you a fan of checkbox buttons?</legend>
+            <div class="checkbox-group">
+                <input id="checkbox-1" type="checkbox" name="checkbox-group" value="Option 1">
+                <label class="checkbox-label" for="checkbox-1">Option 1</label>
+           </div>
+           <div class="checkbox-group">
+                <input id="checkbox-2" type="checkbox" name="checkbox-group" value="Option 2">
+                <label class="checkbox-label" for="checkbox-2">Option 2</label>
+            </div>
+            <div class="checkbox-group">
+                <input id="checkbox-3" type="checkbox" name="checkbox-group" value="Option 3">
+                <label class="checkbox-label" for="checkbox-3">Option 3</label>
+           </div>
+           <div class="checkbox-group">
+                <input id="checkbox-4" type="checkbox" name="checkbox-group" value="Option 4">
+                <label class="checkbox-label" for="checkbox-4">Option 4</label>
+            </div>
+        </fieldset>
+    </span>
+</form>
+
+
+<form id="comp-03-checkbox-group-2">
+
+    <span data-code-snippet>
+        <fieldset class="field-group error">
+            <span class="error-msg">Please make your selection</span>
+            <legend>Are you a fan of checkbox buttons?</legend>
+            <div class="checkbox-group">
+                <input id="checkbox-1" type="checkbox" name="checkbox-group" value="Option 1">
+                <label class="checkbox-label" for="checkbox-1">Option 1</label>
+           </div>
+           <div class="checkbox-group">
+                <input id="checkbox-2" type="checkbox" name="checkbox-group" value="Option 2">
+                <label class="checkbox-label" for="checkbox-2">Option 2</label>
+            </div>
+        </fieldset>
+    </span>
+</form>
+
+
+<script type="text/javascript">
+    var htmlString = $('#comp-03-checkbox-group [data-code-snippet]').html();
+    var htmlString2 = $('#comp-03-checkbox-group-2 [data-code-snippet]').html();
+    $('#comp-03-checkbox-group-code').text(htmlString);
+    $('#comp-03-checkbox-group-code2').text(htmlString);
+    Prism.highlightAll();
+</script>

@@ -1,0 +1,4 @@
+// Add vertical space between field groups. This means the first child won't get a top margin
+.field-group + .field-group {
+  margin-top: $field-group-v-spacing;
+}

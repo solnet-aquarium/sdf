@@ -1,0 +1,52 @@
+
+<form id="comp-01-input-field">
+ 
+        <span data-code-snippet>
+            <!-- field-group is used to space the elements -->
+            <div class="field-group">
+                <label for="std-txt">Standard text field (optional)</label>
+                <input id="std-txt" type="text" placeholder="Your placeholder">
+            </div>
+
+            <div class="field-group">
+                <!-- Add aria-required attribute for screen readers and class for mandatory -->
+                <label for="std-txt-required" class="mandatory-input">Standard mandatory text field<span>This is some hint text if needed</span></label>
+                <input id="std-txt-required" type="text" placeholder="Your placeholder" aria-required="true">
+            </div>
+
+            <div class="field-group">
+                <!-- Add disabled attribute for visual effect and aria-disabled for screen readers -->
+                <label for="std-disabled-txt" aria-disabled="true">Standard disabled text field</label>
+                <input id="std-disabled-txt" type="text" disabled aria-disabled="true" placeholder="Your placeholder">
+            </div>
+
+            <div class="field-group">
+                <!-- Add aria-invalid and aria-describedby for screen readers -->
+                <label for="std-txt-validation">Standard text field with validation error</label>
+                <input id="std-txt-validation" class="error" type="text" aria-invalid="true" placeholder="Your placeholder" aria-describedby="std-txt-validation-msg">
+                <!-- Descriptive error message. -->
+                <span id="std-txt-validation-msg" class="error-msg">Please add the correct number</span>
+            </div>
+
+            <div class="field-group">
+                <!-- Add aria-invalid and aria-describedby for screen readers -->
+                <label for="std-txt-validation">Standard text field with validation error<span>With some hint text to see how it impacts the layout</span></label>
+                <input id="std-txt-validation" class="error" type="text" aria-invalid="true" placeholder="Your placeholder" aria-describedby="std-txt-validation-msg">
+                <!-- Descriptive error message. -->
+                <span id="std-txt-validation-msg" class="error-msg">Please add the correct number</span>
+            </div>
+        </span>
+    
+</form>
+
+
+
+<script type="text/javascript">
+    
+    var htmlString = $('#comp-01-input-field [data-code-snippet]').html();
+    $('#comp-01-input-field-code').text(htmlString);
+    Prism.highlightAll();
+
+</script>
+
+

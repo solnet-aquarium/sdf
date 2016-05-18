@@ -1,0 +1,12 @@
+
+// Validation styling
+
+input.error {
+  border-color: $brand-warning !important;
+}
+
+.error-msg {
+  display: block; // change the spans into block elements
+  margin-top: $input-label-v-spacing; // spacing between the input and it's error message
+  color: $brand-warning;
+}
