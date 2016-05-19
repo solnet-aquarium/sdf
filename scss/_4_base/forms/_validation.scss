@@ -12,10 +12,10 @@ input.error {
 }
 
 fieldset {
-  @include transition(padding $transition-timing);
   &.error {
-    @include transition(padding $transition-timing);
-    border: 1px solid $brand-warning;
-    padding: $layout-gutter-width / 2;
+    input[type="checkbox"]:checked ~ label:before, input[type="radio"]:checked ~ label:before {
+      @include transition(border-color $transition-timing);
+      border-color: $brand-warning;
+    }
   }
 }

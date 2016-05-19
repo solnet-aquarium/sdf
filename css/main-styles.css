@@ -847,6 +847,8 @@ input[type="radio"] + label.error:before {
   min-height: 32px; }
 
 input[type="checkbox"]:checked ~ label:before {
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
   background: url("../img/svg-sprite.svg") #ececec -32px 0;
   background-size: 320px; }
 
@@ -906,14 +908,10 @@ input.error {
   margin-top: 13.33333px;
   color: #ff0000; }
 
-fieldset {
-  -webkit-transition: padding 0.5s;
-  transition: padding 0.5s; }
-  fieldset.error {
-    -webkit-transition: padding 0.5s;
-    transition: padding 0.5s;
-    border: 1px solid #ff0000;
-    padding: 20px; }
+fieldset.error input[type="checkbox"]:checked ~ label:before, fieldset.error input[type="radio"]:checked ~ label:before {
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+  border-color: #ff0000; }
 
 pre {
   padding: 40px;
