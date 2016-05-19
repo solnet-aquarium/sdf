@@ -13,7 +13,7 @@ input.error {
 
 fieldset {
   &.error {
-    input[type="checkbox"]:checked ~ label:before, input[type="radio"]:checked ~ label:before {
+    input[type="checkbox"] ~ label:before, input[type="radio"] ~ label:before {
       @include transition(border-color $transition-timing);
       border-color: $brand-warning;
     }
