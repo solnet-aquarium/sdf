@@ -5,6 +5,8 @@
     <span data-code-snippet>
         <fieldset class="field-group">
             <legend>Are you a fan of checkbox buttons?</legend>
+            <!-- Validation message is visually hidden and hidden from screen readers -->
+            <span class="error-msg" aria-hidden="true">Please make your selection</span>
             <div class="checkbox-group">
                 <input id="checkbox-1" type="checkbox" name="checkbox-group" value="Option 1">
                 <label class="checkbox-label" for="checkbox-1">Option 1</label>
@@ -29,10 +31,11 @@
 <form id="comp-03-checkbox-group-2">
 
     <span data-code-snippet>
-        <!-- Added error class to fieldset, and that's it!  -->
+        <!-- Added error class to fieldset  -->
         <fieldset class="field-group error">
-            <span class="error-msg">Please make your selection</span>
             <legend>Are you a fan of checkbox buttons?</legend>
+            
+            <span class="error-msg" aria-hidden="false">Please make your selection</span>
             <div class="checkbox-group">
                 <input id="checkbox-1" type="checkbox" name="checkbox-group" value="Option 1">
                 <label class="checkbox-label" for="checkbox-1">Option 1</label>

@@ -12,7 +12,13 @@ input.error {
 }
 
 fieldset {
+  .error-msg {
+    display: none;
+  }
   &.error {
+    .error-msg {
+      display: block;
+    }
     input[type="checkbox"] ~ label:before, input[type="radio"] ~ label:before {
       @include transition(border-color $transition-timing);
       border-color: $brand-warning;

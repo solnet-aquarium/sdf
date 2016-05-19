@@ -908,6 +908,10 @@ input.error {
   margin-top: 13.33333px;
   color: #ff0000; }
 
+fieldset .error-msg {
+  display: none; }
+fieldset.error .error-msg {
+  display: block; }
 fieldset.error input[type="checkbox"] ~ label:before, fieldset.error input[type="radio"] ~ label:before {
   -webkit-transition: border-color 0.5s;
   transition: border-color 0.5s;
